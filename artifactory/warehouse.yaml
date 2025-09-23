@@ -1,0 +1,10 @@
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Warehouse
+metadata:
+  name: myimage
+  namespace: kargo-artifactory
+spec:
+  subscriptions:
+  - image:
+      repoURL: artifactory.oneeuronet.com/oen-oneeuronet-images/myimage
+      imageSelectionStrategy: SemVer
